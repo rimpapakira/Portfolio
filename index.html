@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="active">
+          <i class="fa-regular fa-house"></i>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <i class="fa-regular fa-user"></i>
+          <span class="tooltip">About</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-circle-info"></i>
+          <span class="tooltip">Resume</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-briefcase"></i>
+          <span class="tooltip">Portfolio</span>
+        </li>
+        <li>
+          <i class="fa-regular fa-envelope"></i>
+          <span class="tooltip">Contact</span>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="box">
+        <!-- Banner Section -->
+        <section class="section home active">
+          <div class="home-info">
+            <h3>Hello I'm</h3>
+            <h1>RIMPA PAKIRA</h1>
+            <h3>
+              And I'm a
+              <span id="typing-text" class="invisible">FRONTEND DEVELOPER</span>
+            </h3>
+            <p class="desc">
+              I design and build responsive, user-friendly websites that bring
+              ideas to life. Passionate about clean code, modern UI, and
+              continuous learning.
+            </p>
+            <div class="btn-sci">
+              <a
+                href="./assets/Rimpacv.pdf"
+                class="btn"
+                download
+                target="_blank"
+              >
+                Download CV
+              </a>
+              <div class="sci">
+                <a href="https://github.com/rimpapakira">
+                  <i class="fa-brands fa-github"></i>
+                  <span class="tooltip">Github</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/rimpa-pakira-999a94359?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                  <span class="tooltip">Linkedin</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="img-wrapper">
+            <div class="img-box home-img">
+              <img src="./assets/rimpa.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- About Section -->
+        <section class="about section">
+          <div class="img-wrapper">
+            <div class="img-box about-img">
+              <img src="./assets/rimpa.png" alt="" />
+            </div>
+          </div>
+          <div class="about-info">
+            <h2 class="title">About Me</h2>
+            <h3>Frontend Developer</h3>
+            <p class="desc">
+              I'm a motivated and curious Frontend Developer, currently starting
+              my journey in the world of web development. I enjoy learning new
+              technologies and turning creative ideas into clean, responsive
+              websites using HTMI., CSS, and JavaScript. My focus Is on building
+              user-friendly designs that work well across all devices. Even as a
+              fresher, I pay close attention to detail and aim to write clean,
+              structured code. I'm passionate about creating websites that not
+              only look good but also offer smooth and engaging user
+              experiences. I'm constantly learning from online resources,
+              projects, and real-world examples to improve my skills. My goal is
+              to grow as a frontend developer and contribute meaningfully to
+              projects by combining design with functionality.
+            </p>
+            <!-- <a href="" class="btn">View More</a> -->
+          </div>
+        </section>
+        <!-- Resume Section -->
+        <section class="section resume">
+          <h2 class="title">Resume</h2>
+          <div class="tab-box">
+            <div class="tab-list resume-list active">
+              <h3>Skills</h3>
+            </div>
+            <div class="tab-list resume-list">
+              <h3>Education</h3>
+            </div>
+          </div>
+          <div class="tab-wrapper">
+            <div class="tab-grid resume-box skills active">
+              <div class="tab-item resume-item">
+                <i class="fa-brands fa-html5"></i>
+                <p>HTML5</p>
+              </div>
+              <div class="tab-item resume-item">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p>CSS3</p>
+              </div>
+              <div class="tab-item resume-item">
+                <i class="fa-brands fa-square-js"></i>
+                <p>JS</p>
+              </div>
+              <div class="tab-item resume-item">
+                <i class="fa-brands fa-bootstrap"></i>
+                <p>Bootstrap</p>
+              </div>
+              <div class="tab-item resume-item">
+                <i class="fa-brands fa-square-figma"></i>
+                <p>Figma</p>
+              </div>
+              <div class="tab-item resume-item">
+                <i class="fa-brands fa-square-github"></i>
+                <p>Github</p>
+              </div>
+            </div>
+            <div class="tab-grid resume-box education">
+              <div class="tab-item resume-item">
+                <h4>2024</h4>
+                <h4>HTML Frontend Development</h4>
+                <h4>Webskitter Academy</h4>
+                <p></p>
+              </div>
+              <div class="tab-item resume-item">
+                <h4>2023 - Present</h4>
+                <h4>Bachelor of Arts (B.A. in Bengali)</h4>
+                <h4>Tarakeswar Degree College</h4>
+                <p></p>
+              </div>
+              <div class="tab-item resume-item">
+                <h4>2022 - 2023</h4>
+                <h4>Higher Secondary (Arts) - 63.2%</h4>
+                <h4>Haripal Tirthabasi Girls High School</h4>
+                <p></p>
+              </div>
+              <div class="tab-item resume-item">
+                <h4>2020 - 2021</h4>
+                <h4>Secondary School Certificate – 71.28%</h4>
+                <h4>Haripal Tirthabasi Girls High School</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Portfolio Section -->
+        <section class="section portfolio">
+          <h2 class="title">Portfolio</h2>
+          <div class="tab-box">
+            <div class="tab-list portfolio-list active">
+              <h3>My Work</h3>
+            </div>
+            <div class="tab-list portfolio-list">
+              <h3>My Services</h3>
+            </div>
+          </div>
+          <div class="tab-wrapper">
+            <div class="tab-grid portfolio-box work active">
+              <div class="tab-item portfolio-item">
+                <div class="work-img">
+                  <img src="./assets/Nextcent.png" alt="" />
+                </div>
+                <div class="work-info">
+                  <h4>Nexcent</h4>
+                  <p>
+                    Clean and responsive SaaS landing page designed with HTML,
+                    CSS, and JavaScript. Features include client showcase,
+                    service overview, testimonials, stats, blog section, and
+                    modern illustrations — optimized for lead generation and
+                    business credibility.
+                  </p>
+                  <div class="tech-used">HTML CSS JavaScript</div>
+                  <div class="portfolio-icon work-icon">
+                    <a href="https://rimpapakira.github.io/Nexcent/">
+                      <i class="fa-solid fa-arrow-left"></i>
+                      <span class="tooltip">Preview</span>
+                    </a>
+                    <a href="https://github.com/rimpapakira/Nexcent.git">
+                      <i class="fa-brands fa-github"></i>
+                      <span class="tooltip">Github Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item portfolio-item">
+                <div class="work-img">
+                  <img src="./assets/Positivus.png" alt="" />
+                </div>
+                <div class="work-info">
+                  <h4>Positivus</h4>
+                  <p>
+                    Modern and responsive "About Us" page for a digital
+                    marketing agency. Highlights include company journey
+                    timeline, impact metrics, core values, awards, and team
+                    invitation — designed with clean UI, vibrant illustrations,
+                    and engaging content layout.
+                  </p>
+                  <div class="tech-used">HTML CSS JavaScript</div>
+                  <div class="portfolio-icon work-icon">
+                    <a href="https://rimpapakira.github.io/Positivus/">
+                      <i class="fa-solid fa-arrow-left"></i>
+                      <span class="tooltip">Preview</span>
+                    </a>
+                    <a href="https://github.com/rimpapakira/Positivus.git">
+                      <i class="fa-brands fa-github"></i>
+                      <span class="tooltip">Github Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item portfolio-item">
+                <div class="work-img">
+                  <img src="./assets/restaurant.png" alt="" />
+                </div>
+                <div class="work-info">
+                  <h4>Restaurant</h4>
+                  <p>
+                    Responsive restaurant homepage featuring elegant food
+                    presentation, special dishes, chef spotlight, and customer
+                    testimonials — built with HTML, CSS, and JavaScript for a
+                    clean, modern UI and smooth user experience.
+                  </p>
+                  <div class="tech-used">HTML CSS JavaScript</div>
+                  <div class="portfolio-icon work-icon">
+                    <a href="https://rimpapakira.github.io/restaurant/">
+                      <i class="fa-solid fa-arrow-left"></i>
+                      <span class="tooltip">Preview</span>
+                    </a>
+                    <a href="https://github.com/rimpapakira/restaurant.git">
+                      <i class="fa-brands fa-github"></i>
+                      <span class="tooltip">Github Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item portfolio-item">
+                <div class="work-img">
+                  <img src="./assets/ipdc.png" alt="" />
+                </div>
+                <div class="work-info">
+                  <h4>IPDC</h4>
+                  <p>
+                    Modern finance company homepage built with HTML, CSS, and
+                    JavaScript. Features include loan services, customer values,
+                    business partners, performance stats, newsletter
+                    subscription, and clean, professional UI with engaging
+                    visuals and mobile responsiveness.
+                  </p>
+                  <div class="tech-used">HTML CSS JavaScript</div>
+                  <div class="portfolio-icon work-icon">
+                    <a href="https://rimpapakira.github.io/IPDC/">
+                      <i class="fa-solid fa-arrow-left"></i>
+                      <span class="tooltip">Preview</span>
+                    </a>
+                    <a href="https://github.com/rimpapakira/IPDC.git">
+                      <i class="fa-brands fa-github"></i>
+                      <span class="tooltip">Github Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item portfolio-item">
+                <div class="work-img">
+                  <img src="./assets/carpoint.png" alt="" />
+                </div>
+                <div class="work-info">
+                  <h4>Carpoint</h4>
+                  <p>
+                    Responsive car rental homepage designed with HTML, CSS, and
+                    JavaScript featuring search filters, booking section, client
+                    reviews, brand logos, and a contact form — optimized for
+                    modern UI and smooth user experience.
+                  </p>
+                  <div class="tech-used">HTML CSS JavaScript</div>
+                  <div class="portfolio-icon work-icon">
+                    <a href="https://rimpapakira.github.io/carpoint/">
+                      <i class="fa-solid fa-arrow-left"></i>
+                      <span class="tooltip">Preview</span>
+                    </a>
+                    <a href="https://github.com/rimpapakira/carpoint.git">
+                      <i class="fa-brands fa-github"></i>
+                      <span class="tooltip">Github Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-item portfolio-item">
+                <div class="work-img">
+                  <img src="./assets/autocarx.png" alt="" />
+                </div>
+                <div class="work-info">
+                  <h4>Autocarx</h4>
+                  <p>
+                    Responsive car service website built with HTML, CSS, and
+                    JavaScript. Includes service booking form, pricing plans,
+                    product listings, customer testimonials, and step-by-step
+                    service guide — optimized for usability and clean visual
+                    hierarchy.
+                  </p>
+                  <div class="tech-used">HTML CSS JavaScript</div>
+                  <div class="portfolio-icon work-icon">
+                    <a href="https://rimpapakira.github.io/Final-project/">
+                      <i class="fa-solid fa-arrow-left"></i>
+                      <span class="tooltip">Preview</span>
+                    </a>
+                    <a href="https://github.com/rimpapakira/Final-project.git">
+                      <i class="fa-brands fa-github"></i>
+                      <span class="tooltip">Github Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-grid portfolio-box service">
+              <div class="tab-item portfolio-item">
+                <div class="portfolio-icon service-icon">
+                  <i class="fa-solid fa-code icon"></i>
+                  <a href="">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </a>
+                </div>
+                <h4>HTML/CSS/JS Development</h4>
+                <p>Clean, semantic code using HTML5, CSS3, and JavaScript.</p>
+              </div>
+              <div class="tab-item portfolio-item">
+                <div class="portfolio-icon service-icon">
+                  <i class="fa-solid fa-laptop-code icon"></i>
+                  <a href="">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </a>
+                </div>
+                <h4>Responsive Web Design</h4>
+                <p>
+                  Modern, mobile-friendly designs that look great on all
+                  devices.
+                </p>
+              </div>
+              <div class="tab-item portfolio-item">
+                <div class="portfolio-icon service-icon">
+                  <i class="fa-solid fa-layer-group icon"></i>
+                  <a href="">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </a>
+                </div>
+                <h4>PSD/Figma to HTML</h4>
+                <p>
+                  Pixel-perfect conversion of design files into working web
+                  pages.
+                </p>
+              </div>
+              <div class="tab-item portfolio-item">
+                <div class="portfolio-icon service-icon">
+                  <i class="fa-solid fa-bug icon"></i>
+                  <a href="">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </a>
+                </div>
+                <h4>Bug Fixing</h4>
+                <p>
+                  Quick fixes for UI/UX and frontend logic bugs on your site.
+                </p>
+              </div>
+              <div class="tab-item portfolio-item">
+                <div class="portfolio-icon service-icon">
+                  <i class="fa-solid fa-wand-magic-sparkles icon"></i>
+                  <a href="">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </a>
+                </div>
+                <h4>Animations & Effects</h4>
+                <p>
+                  Smooth scroll, hover, and interactive effects with CSS and JS.
+                </p>
+              </div>
+              <div class="tab-item portfolio-item">
+                <div class="portfolio-icon service-icon">
+                  <i class="fa-brands fa-bootstrap icon"></i>
+                  <a href="">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </a>
+                </div>
+                <h4>Frontend Development with Bootstrap</h4>
+                <p>
+                  Building responsive UIs with utility-first CSS frameworks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="section contact active">
+          <h2 class="title">Contact</h2>
+          <div class="contact-wrapper">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="contact-form"
+            >
+              <h3>Let's Work Together!</h3>
+              <div class="field-box">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="e04118f7-d4f0-4ed7-bc7e-6610fb8597f9"
+                />
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Full Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email Address"
+                  placeholder="Email Address"
+                  required
+                />
+                <textarea
+                  name="Your Message"
+                  id=""
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="contact-btn">
+                <button type="submit" class="btn">Send Massage</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Js -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
