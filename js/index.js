@@ -20,14 +20,14 @@ navs.forEach((nav, idx) => {
     sections[idx].classList.add("active");
 
     const array = Array.from(sections);
-    const arrSecs = array.slice(1, -1);   // only requires indexes 1, 2, 3 or does not require start and indexes
-    arrSecs.forEach(arrSecs =>{
-      if(arrSecs.classList.contains("active")) {
-        sections[4].classList.add('action-contact');
+    const arrSecs = array.slice(1, -1); // only requires indexes 1, 2, 3 or does not require start and indexes
+    arrSecs.forEach((arrSecs) => {
+      if (arrSecs.classList.contains("active")) {
+        sections[4].classList.add("action-contact");
       }
-    })
-    if (sections[0].classList.contains('active')){
-        sections[4].classList.remove('action-contact');
+    });
+    if (sections[0].classList.contains("active")) {
+      sections[4].classList.remove("action-contact");
     }
   });
 });
@@ -55,8 +55,8 @@ portfolioLists.forEach((list, idx) => {
 });
 
 // visibility for contact section when reloading (cube reloading animation)
-setTimeout(() =>{
-  sections[4].classList.remove('active');
+setTimeout(() => {
+  sections[4].classList.remove("active");
 }, 1500);
 
 // typing text
@@ -87,3 +87,48 @@ function type() {
   setTimeout(type, 100); // Typing/deleting speed
 }
 type();
+
+// Cursor
+const drop = document.getElementById("drop");
+
+let mouseX = innerWidth / 2;
+let mouseY = innerHeight / 2;
+let dx = mouseX,
+  dy = mouseY;
+
+// Smooth follow (lerp)
+function tick() {
+  dx += (mouseX - dx) * 0.18; // smoothing factor
+  dy += (mouseY - dy) * 0.18;
+  drop.style.left = dx + "px";
+  drop.style.top = dy + "px";
+  requestAnimationFrame(tick);
+}
+tick();
+
+// Show on enter, hide when leaving the window
+window.addEventListener("mouseenter", () => {
+  drop.style.opacity = 1;
+});
+window.addEventListener("mousemove", (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+  drop.style.opacity = 1; // ensure visible while moving
+  // optional ripple trail (lightweight)
+  spawnRipple(mouseX, mouseY);
+});
+window.addEventListener("mouseleave", () => {
+  drop.style.opacity = 0;
+});
+document.addEventListener("visibilitychange", () => {
+  drop.style.opacity = document.hidden ? 0 : 1;
+});
+
+function spawnRipple(x, y) {
+  const r = document.createElement("div");
+  r.className = "trail";
+  r.style.left = x + "px";
+  r.style.top = y + "px";
+  document.body.appendChild(r);
+  r.addEventListener("animationend", () => r.remove());
+}
